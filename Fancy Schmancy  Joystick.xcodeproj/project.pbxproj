@@ -34,8 +34,6 @@
 		33C65155191273B600A56A2D /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33C65154191273B600A56A2D /* Icon-Small@2x.png */; };
 		33C65157191273B600A56A2D /* Icon-Spotlight-iOS7.png in Resources */ = {isa = PBXBuildFile; fileRef = 33C65156191273B600A56A2D /* Icon-Spotlight-iOS7.png */; };
 		33C65159191273B600A56A2D /* Icon-Spotlight-iOS7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33C65158191273B600A56A2D /* Icon-Spotlight-iOS7@2x.png */; };
-		33C6515C191273B600A56A2D /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 33C6515B191273B600A56A2D /* iTunesArtwork */; };
-		33C6515E191273B600A56A2D /* iTunesArtwork@2x in Resources */ = {isa = PBXBuildFile; fileRef = 33C6515D191273B600A56A2D /* iTunesArtwork@2x */; };
 		33C65164191273B600A56A2D /* CCAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C65163191273B600A56A2D /* CCAction.m */; };
 		33C65167191273B600A56A2D /* CCActionCatmullRom.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C65166191273B600A56A2D /* CCActionCatmullRom.m */; };
 		33C6516A191273B600A56A2D /* CCActionEase.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C65169191273B600A56A2D /* CCActionEase.m */; };
@@ -256,8 +254,6 @@
 		33C65156191273B600A56A2D /* Icon-Spotlight-iOS7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Spotlight-iOS7.png"; path = "Resources/Icons/Icon-Spotlight-iOS7.png"; sourceTree = "<group>"; };
 		33C65158191273B600A56A2D /* Icon-Spotlight-iOS7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Spotlight-iOS7@2x.png"; path = "Resources/Icons/Icon-Spotlight-iOS7@2x.png"; sourceTree = "<group>"; };
 		33C6515A191273B600A56A2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
-		33C6515B191273B600A56A2D /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; name = iTunesArtwork; path = ../iTunesArtwork; sourceTree = "<group>"; };
-		33C6515D191273B600A56A2D /* iTunesArtwork@2x */ = {isa = PBXFileReference; lastKnownFileType = file; name = "iTunesArtwork@2x"; path = "../iTunesArtwork@2x"; sourceTree = "<group>"; };
 		33C65162191273B600A56A2D /* CCAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CCAction.h; path = Libraries/cocos2d/CCAction.h; sourceTree = "<group>"; };
 		33C65163191273B600A56A2D /* CCAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CCAction.m; path = Libraries/cocos2d/CCAction.m; sourceTree = "<group>"; };
 		33C65165191273B600A56A2D /* CCActionCatmullRom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CCActionCatmullRom.h; path = Libraries/cocos2d/CCActionCatmullRom.h; sourceTree = "<group>"; };
@@ -735,8 +731,6 @@
 				33C6513B191273B600A56A2D /* Default-568h@2x.png */,
 				33C6513D191273B600A56A2D /* Default-Landscape~ipad.png */,
 				33C6515A191273B600A56A2D /* Info.plist */,
-				33C6515B191273B600A56A2D /* iTunesArtwork */,
-				33C6515D191273B600A56A2D /* iTunesArtwork@2x */,
 				33C6513F191273B600A56A2D /* Icons */,
 			);
 			name = Resources;
@@ -1607,7 +1601,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = danielgronlund;
+				ORGANIZATIONNAME = "Penguin Games";
+				TargetAttributes = {
+					33C65119191273B600A56A2D = {
+						DevelopmentTeam = ABNLP49688;
+					};
+				};
 			};
 			buildConfigurationList = 33C65115191273B600A56A2D /* Build configuration list for PBXProject "Fancy Schmancy  Joystick" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1650,14 +1649,12 @@
 				33C65145191273B600A56A2D /* Icon-72.png in Resources */,
 				33C65293191273B700A56A2D /* LICENSE_cocos2d.txt in Resources */,
 				33C6513C191273B600A56A2D /* Default-568h@2x.png in Resources */,
-				33C6515C191273B600A56A2D /* iTunesArtwork in Resources */,
 				33C65157191273B600A56A2D /* Icon-Spotlight-iOS7.png in Resources */,
 				33C6514B191273B600A56A2D /* Icon-76@2x.png in Resources */,
 				33C653BF191273B800A56A2D /* LICENSE_Chipmunk.txt in Resources */,
 				33C65159191273B600A56A2D /* Icon-Spotlight-iOS7@2x.png in Resources */,
 				33C65149191273B600A56A2D /* Icon-76.png in Resources */,
 				33C6531F191273B800A56A2D /* ChangeLog in Resources */,
-				33C6515E191273B600A56A2D /* iTunesArtwork@2x in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1941,6 +1938,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1966,6 +1964,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Fancy Schmancy  Joystick/Supporting Files/Prefix.pch";
@@ -2005,6 +2004,7 @@
 				33C653D2191273B800A56A2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		33C653D3191273B800A56A2D /* Build configuration list for PBXNativeTarget "Fancy Schmancy  Joystick" */ = {
 			isa = XCConfigurationList;
@@ -2013,6 +2013,7 @@
 				33C653D5191273B800A56A2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
